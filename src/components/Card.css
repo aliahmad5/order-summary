@@ -1,0 +1,149 @@
+@import url('https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@900&display=swap');
+
+.card{
+    
+    display: grid;
+    grid-template-columns: 380px;
+    grid-template-rows: 180px 237px 142px;
+    grid-template-areas: "card-image" "card-middle" "card-bottom";
+
+    font-family: 'Red Hat Display', sans-serif;
+    border-radius: 18px;
+    background: #fff;
+    box-shadow: 2px 12px 20px hsl(245,75%,52%,0.3);
+    text-align: center;
+
+    height: 35em;
+
+    transition: 0.5s ease;
+}
+
+.card-image{
+    grid-area: card-image;
+    background: url("../assets/images/illustration-hero.svg");
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+    background-size: cover;
+    height: 180px;
+    width: 100%;
+    margin-bottom: 5px;
+    
+}
+
+.card-middle {
+    grid-area: card-middle;
+    margin: 25px;
+    margin-top: 0px;
+}
+
+.text-container h1{
+    font-size: 25px;
+    font-weight: 900;
+    color: hsl(223, 47%, 23%);
+}
+
+.text-container p{
+    color: hsl(224, 23%, 55%);
+    font-weight: 500;
+    font-size: 15px;
+    line-height: 23px;
+
+}
+
+.plan-container{
+    background: hsl(225, 100%, 98%);
+    border-radius: 10px;
+    display: flex;
+    flex-wrap: wrap;
+    height: 70px;
+    
+    
+}
+
+.img{
+    background: url("../assets/images/icon-music.svg");
+    background-repeat: no-repeat;
+    width: 50px;
+    height: 50px;
+    margin-left: 10px;
+    margin-top: 12px;
+}
+
+.text{
+    margin-left: 15px;
+    margin-top: 5px;
+}
+
+.plan-container h3{
+    font-size: 13px;
+    color: hsl(223, 47%, 23%);
+    
+}
+
+.plan-container p{
+    font-size: 13px;
+    margin-top: -13px;
+    color:hsl(224, 23%, 55%);
+}
+
+.link{
+    margin: 27px;
+    font-size: 12px;
+    font-weight: 900;
+    color: hsl(245, 75%, 52%);
+    margin-left: 9em;
+    
+}
+
+.card-bottom button{
+    justify-content: center;
+    align-items: center;
+    margin-top: 5px;
+    margin-bottom: 30px;
+    width: 83%;
+    height: 45px;
+    border-radius: 9px;
+    border: none;
+    text-align: center;
+    background-color:hsl(245, 75%, 52%);
+    box-shadow: 2px 12px 15px hsl(245,75%,52%,0.3);
+    color:hsl(225, 100%, 98%);
+    font-size: 15px;
+    cursor: pointer;
+    font-weight: 700;
+
+}
+
+.card-bottom a{
+    color:hsl(224, 23%, 55%);
+    font-weight: 700;
+    text-decoration: none;
+}
+
+.card:hover{
+    transform: scale(1.1);
+    box-shadow: 5px 5px 15px hsl(245,75%,52%,0.6);
+}
+
+@media (max-width: 444px){
+    .card{
+        grid-template-columns: 280px;  
+        margin-left: 30px;
+        margin-right: 30px;        
+    }
+
+    .link{
+        position: relative;
+        left: 12px;
+        margin: 25px;
+        margin-left: 10px;
+    }
+}
+
+@media (max-width: 320px){
+    .card{
+        margin-left: 10px;
+        margin-right: 10px;
+    }
+}
